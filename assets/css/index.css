@@ -34,6 +34,10 @@ body{
     display:flex;
     
 }
+.nav-manu a{
+    color:white;
+    text-decoration: none;
+}
 .icons li{
     list-style-type: none;
     margin: 0px 18px;
@@ -578,6 +582,7 @@ background: linear-gradient(86deg, rgba(95,107,156,1) 0%, rgba(97,20,71,1) 41%, 
         color:white;
     }
     .nav-manu{
+        display:none;
         height:100vh;
         width:80%;
         top:0px;
@@ -681,7 +686,7 @@ background: linear-gradient(86deg, rgba(95,107,156,1) 0%, rgba(97,20,71,1) 41%, 
     .logo img{
         width: 120px;
         opacity: 0.4;
-        margin:15px 0px;
+        margin:25px 0px;
         transition:all 0.2s ease;
     }
     .logo img:hover{
@@ -808,7 +813,6 @@ background: linear-gradient(86deg, rgba(95,107,156,1) 0%, rgba(97,20,71,1) 41%, 
         background-color:#212429;
         transition:all 0.5s ease;
         box-shadow: -15px -10px 5px #16181a,-15px -10px 10px #1c2022,-10px -15px 15px #131416, 10px 15px 30px #1a1c1f;
-        
     }
     .lg:hover .lgh{
         transform:scale(1.1);
@@ -855,31 +859,45 @@ background: linear-gradient(86deg, rgba(95,107,156,1) 0%, rgba(97,20,71,1) 41%, 
         flex-direction:column;
     }
     .workcont{
+        display:flex;
+        flex-direction:column;
         width:100%;
         height:100%;
         background-color:green;
         margin:20px 0px;
         border-radius:10px;
-        overflow:hidden;
     }
-    .workcont-right{
+    .workcont-left{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
         line-height:35px;
         padding:30px;
         width: 100%;
-        height:90%;
+        height:50%;
         background: rgb(22,31,46);
         background: linear-gradient(270deg, rgba(22,31,46,1) 0%, rgba(15,21,33,1) 80%);
     }
-    .workcont-right p{
+    .workcont-left p{
         margin-bottom: 10px;
         color:#6d737f;
         font-size:13px;
         line-height:28px;
     }
-    .workcont-right h2{
+    .workcont-left h2{
         color:#c3cfdd;
         font-size:28px;
         margin-bottom:20px;
+    }
+    .workcont-right{
+        height:100%;
+        width:100%;
+    }
+    .workcont-right img{
+        height:100%;
+        width:100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+
     }
     .wrline{
         display:flex;
@@ -889,7 +907,7 @@ background: linear-gradient(86deg, rgba(95,107,156,1) 0%, rgba(97,20,71,1) 41%, 
         background-color:black;
     }
     .workcont:nth-child(2){
-        height:120%;
+        height:100%;
     }
     .skill{
         display:flex;
@@ -992,7 +1010,6 @@ background: linear-gradient(86deg, rgba(95,107,156,1) 0%, rgba(97,20,71,1) 41%, 
     .E-learning-image{
         height:40%;
         width:100%;
-        background-color:yellow;
     }
     .E-learning-content{
         height:60%;
